@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+section
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+section .imgBx
+{
+	position: relative;
+	width: 50%;
+	height: 100%;
+}
+section .imgBx:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(225deg, #4a5d23, #4a5d23);
+	z-index:1;
+	mix-blend-mode: soft-light;
+}
+section .imgBx img
+{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section .form-container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+section .form-container .formBx
+{
+	width: 50%;
+}
+
+section .form-container .formBx h3
+{
+	color: #000000;
+	font-weight: 600;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	border-bottom: 4px solid #4a5d23;
+	display: inline-block;
+	letter-spacing: 1px;
+}
+
+section .form-container .formBx .inputBx 
+{
+	margin-bottom: 20px;
+}
+
+section .form-container .formBx .inputBx span
+{
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: inline-block;
+	color: #000000;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+section .form-container .formBx .inputBx input
+{
+	width: 100%;
+	padding: 10px 20px;
+	outline: none;
+	font-weight: 400;
+	border: 1px solid #000000;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #000000;
+	background: transparent;
+	border-radius: 30px;
+}
+
+section .form-container .formBx .inputBx input[type="submit"]
+{
+	background: #4a5d23;
+	color: #fff;
+	outline: none;
+	border: none;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+section .form-container .formBx .inputBx input[type="submit"]:hover
+{
+	background: #000000;
+}
+
+section .form-container .formBx .remember
+{
+	margin-top: -29px;
+	margin-bottom: 10px;
+	color:  #000000;
+	font-weight: 400;
+	font-size: 17px;
+}
+
+section .form-container .formBx .inputBx p
+{
+	color: #000000;
+	text-align: center;
+}
+
+section .form-container .formBx .inputBx p a
+{
+	color: #4a5d23;
+}
+.message{
+   position: sticky;
+   top:0;
+   margin:0 auto;
+   max-width: 1200px;
+   background-color: var(--white);
+   padding:1rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 10000;
+   gap:1.5rem;
+}
+
+.message span{
+   font-size: 1rem;
+   color:var(--black);
+}
+
+.message i{
+   cursor: pointer;
+   color:var(--red);
+   font-size: 1rem;
+}
+
+.message i:hover{
+   transform: rotate(90deg);
+}
+
+.forgot-pass
+{
+	text-align:left;
+	margin: 10px 0;
+}
+
+.forgot-pass a
+{
+	color:  #000000;
+	font-family: "Montserrat", sans-serif;
+	text-decoration:underline;
+}
+
+.forgot-pass:hover a{
+	color: #4a5d23;
+}
+
+.show
+{
+	all: initial;
+	transform: translateX(-4rem);
+	color: #4a5d23;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .1rem;
+	cursor: pointer;
+	position: absolute;
+	right: 248px;
+	transform: translateX(5rem);
+	cursor: pointer;
+	transform: translateY(0.73rem);
+	max-width: 2rem;
+}
+	
+}
+
+
+.password:valid ~ .show{
+	display:block;
+}
+
+.form-message{
+	text-align: center;
+	color: #4a5d23;
+	padding: 10px 0;
+	text-transform: lowercase;
+	background: rgba(231, 235, 249,1);
+	font-size: 17px;
+	display: none;
+	display: inline-block;
+}
+
+.form-message p{
+	margin: 0;
+	
+}
+
+.form-message p span{
+	color: #4a5d23;
+}
+
+.show_cpass{
+	all: initial;
+	transform: translateX(-4rem);
+	color: #4a5d23;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .1rem;
+	cursor: pointer;
+	position: absolute;
+	right: 248px;
+	transform: translateX(5rem);
+	cursor: pointer;
+	transform: translateY(0.73rem);
+	max-width: 2rem;
+}
+
+.show_pass{
+	all: initial;
+	transform: translateX(-4rem);
+	color: #4a5d23;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: .1rem;
+	cursor: pointer;
+	position: absolute;
+	right: 248px;
+	transform: translateX(5rem);
+	cursor: pointer;
+	transform: translateY(0.73rem);
+	max-width: 2rem;
+}
+
+@media (max-width: 768px)
+{
+	section .imgBx
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	section .form-container
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	section .form-container .formBx
+	{
+		width: 100%;
+		padding: 40px;
+		background: rgb(255 255 255/ 0.9);
+		margin: 50px;
+	}
+	section .form-container .formBx h3
+	{
+		color: #000000;
+		text-align: center;
+		margin: 30px 0 10px;
+		font-weight: 500;
+	}
+}

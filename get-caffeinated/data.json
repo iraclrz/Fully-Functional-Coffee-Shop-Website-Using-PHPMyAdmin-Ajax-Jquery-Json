@@ -1,0 +1,14 @@
+[
+    {
+        "name": "user1",
+        "email": "user1@gmail.com",
+        "pass": "$2y$10$4rcLIOadNS5mmIXTHvwmkeTWqzDvjm\/pNJ1hdfuoARqpKFJyFr2eO",
+        "user_type": "user"
+    },
+    {
+        "name": "admin1",
+        "email": "admin1@gmail.com",
+        "pass": "$2y$10$ulQX0RN20NGRByydZ2ncUumzu71h4hzltCJt5pa1pxJMDGTB3AKgm",
+        "user_type": "admin"
+    }
+]
